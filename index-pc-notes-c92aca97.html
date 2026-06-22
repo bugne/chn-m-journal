@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资料索引 · 世界杯</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background: #faf9f7;
+            color: #2c2c2c;
+            line-height: 1.7;
+            padding: 3rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 680px;
+            width: 100%;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        .label {
+            display: inline-block;
+            font-size: 0.75rem;
+            letter-spacing: 0.08em;
+            color: #8a8a8a;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 0.4rem;
+        }
+
+        h1 {
+            font-weight: 450;
+            font-size: 2.2rem;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+            margin: 0.5rem 0 0.8rem 0;
+            color: #1e1e1e;
+        }
+
+        .sub {
+            font-size: 1rem;
+            color: #5f5f5f;
+            margin-bottom: 0.2rem;
+        }
+
+        .intro-text {
+            font-size: 1.05rem;
+            color: #3b3b3b;
+            margin: 1.2rem 0 2rem 0;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2rem 2rem 2rem 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
+        }
+
+        h2 {
+            font-weight: 430;
+            font-size: 1.3rem;
+            letter-spacing: -0.01em;
+            margin-bottom: 1.2rem;
+            color: #1f1f1f;
+            border-left: 4px solid #c8b28e;
+            padding-left: 1rem;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .feature-item {
+            flex: 1 1 180px;
+        }
+
+        .feature-item h3 {
+            font-weight: 480;
+            font-size: 1.05rem;
+            color: #282828;
+            margin-bottom: 0.3rem;
+        }
+
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #4e4e4e;
+        }
+
+        .scenario-list {
+            padding-left: 0;
+            list-style: none;
+            margin: 1rem 0 1.2rem 0;
+        }
+
+        .scenario-list li {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #efefef;
+            font-size: 0.98rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .scenario-list li:last-child {
+            border-bottom: none;
+        }
+
+        .scenario-list li::before {
+            content: "·";
+            margin-right: 0.8rem;
+            color: #b0976a;
+            font-weight: bold;
+        }
+
+        .note-box {
+            background: #f4f2ee;
+            border-radius: 16px;
+            padding: 1.5rem 1.8rem;
+            margin: 2.5rem 0 2rem 0;
+            font-size: 0.95rem;
+            color: #3c3c3c;
+        }
+
+        .note-box strong {
+            font-weight: 500;
+            color: #1f1f1f;
+        }
+
+        .faq-item {
+            margin: 1.5rem 0;
+        }
+
+        .faq-item .q {
+            font-weight: 450;
+            color: #222;
+            margin-bottom: 0.25rem;
+        }
+
+        .faq-item .a {
+            font-size: 0.95rem;
+            color: #555;
+            padding-left: 0.8rem;
+            border-left: 2px solid #ddd;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+        }
+
+        .link-sentence {
+            background: #ffffff;
+            padding: 1.2rem 1.8rem;
+            border-radius: 40px;
+            margin: 2rem 0 1rem 0;
+            border: 1px solid #e6e3de;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        a {
+            color: #7d6b4b;
+            text-decoration: none;
+            border-bottom: 1px solid #d6ccbb;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #7d6b4b;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e3e0da;
+            margin: 2.8rem 0 1.2rem 0;
+        }
+
+        .footer-note {
+            font-size: 0.8rem;
+            color: #888;
+            text-align: center;
+            margin-top: 1.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        @media (max-width: 520px) {
+            body {
+                padding: 2rem 1.2rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            .feature-grid {
+                gap: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <header>
+        <div class="label">资料整理 · 信息索引</div>
+        <h1>世界杯<br>赛事档案与线索页</h1>
+        <div class="sub">一份围绕世界杯的结构化阅读笔记</div>
+        <div class="intro-text">
+            从历届决赛圈名单到预选赛数据，从经典对阵到赛程脉络，许多信息散落在不同平台。
+            这里尝试以索引的视角，将分散的线索归拢到一处，方便查阅与对照。
+        </div>
+    </header>
+
+    <section class="card">
+        <h2>内容亮点</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>届次纵览</h3>
+                <p>收录自1930年至今每届世界杯的举办国、冠军、决赛比分、参赛队数等基础信息，便于横向对比。</p>
+            </div>
+            <div class="feature-item">
+                <h3>赛程与分组</h3>
+                <p>小组赛分组情况、淘汰赛对阵树、比赛时间（UTC+8参考），适合赛前标记焦点场次。</p>
+            </div>
+            <div class="feature-item">
+                <h3>记录与冷门</h3>
+                <p>进球榜、出场纪录、最大分差、黑马之路——数据来自公开统计，补充观看背景。</p>
+            </div>
+        </div>
+        <p style="font-size:0.95rem; color:#4b4b4b; margin-top: 0.5rem;">
+            页面内容持续根据公开信息整理，并非实时比分直播，更适合作为资料翻阅或赛前功课的起点。
+        </p>
+    </section>
+
+    <section>
+        <h2>常见使用场景</h2>
+        <ul class="scenario-list">
+            <li>赛前快速回顾某届世界杯的参赛队伍与赛制变化</li>
+            <li>查证某位球员或球队的历届参赛记录（非实时数据，以历史资料为主）</li>
+            <li>对比不同年代规则差异（如小组赛胜场积分、扩军进程）</li>
+            <li>作为看球聊天的背景素材页，辅助话题延伸</li>
+        </ul>
+    </section>
+
+    <div class="link-sentence">
+        有关历届赛事脉络与最新公开信息，可参考
+        <a href="https://index-pc-fifaworldcup.com">世界杯</a>
+        索引页面。
+    </div>
+
+    <div class="note-box">
+        <strong>使用提示</strong><br>
+        本站点内容均基于公开可查的资料整理，不包含博彩、投注或任何形式的竞猜引导。
+        页面更新频率随主要赛事周期调整，非实时数据平台，请合理预期。
+    </div>
+
+    <section>
+        <h2>常见问题 · FAQ</h2>
+        <div class="faq-item">
+            <div class="q">页面数据多久更新一次？</div>
+            <div class="a">通常在主要国际赛事（如世界杯预选赛、正赛）结束后一周内完成阶段更新，日常仅做细节勘误。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">是否包含所有预选赛数据？</div>
+            <div class="a">主要收录各大洲晋级球队及关键附加赛，单场预选赛详细数据建议参考所在足协官网。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">页面适合移动端阅读吗？</div>
+            <div class="a">已针对手机屏幕做了窄栏适配，字号与间距在6英寸左右屏幕上阅读较舒适。</div>
+        </div>
+    </section>
+
+    <hr>
+    <div class="footer-note">
+        内容整理自公开资料 · 仅供信息参考
+    </div>
+</div>
+</body>
+</html>
